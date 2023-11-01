@@ -1,0 +1,51 @@
+//excercise using objects
+//itemname
+//price
+//discount
+//ittemCode
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let obj={
+        itemName:"oil",
+        price:500,
+        discount:20,
+        itemcode:"a62"
+    }
+
+    function createProduct(name,price,discount,itemcode){
+        return{
+            itemName:"oil",
+        price:500,
+        discount:20,
+        itemcode:"a62"
+        }
+    }
+
+    const football=createProduct('football',400,10,'f20');
+
+    function Product(name,price,discount,itemcode){
+        this.itemName=name;
+        this.price=price;
+        this.discount=discount;
+        this.itemcode=itemcode;
+        this.discountValue=function(){
+            return price*discount/100;
+        }
+    }
+
+    const mobile=new Product('onePlues',40000,400,'ob44');
+
+
+    
+</script>
+</html>
