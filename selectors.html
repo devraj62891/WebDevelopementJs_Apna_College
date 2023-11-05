@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM MANIPULATION</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="heading">Welcome to code with harry</h1>
+        <div id="myfirst" class="child red good" id="first">child 1</div>
+        <div class="child">child 2</div>
+        <div class="child">child 3</div>
+        <div class="child red">child 4</div>
+        <form action="none.html" method="post">
+            <a href="//codewithharry.com">Go to codewith harry</a><br><br>
+            search this website:<input type="text" name="Hello" id="">
+            <input type="button" value="submit" >
+        </form>
+
+    </div>
+    
+</body>
+<script>
+    console.log("welcome to tutorial 14");
+    /*
+      element selectors:
+      1.single element selector
+      2.Multiple element selectore
+     
+    */
+   // 1. single element selector
+   let element=document.getElementById('myfirst');
+//    element=element.className;
+// element=childNodes;
+    //   element=element.parentNode;
+    element.style.color='red';
+    element.innerText='devraj child'
+    element.innerHTML='<b>devraj child<b>'
+//    console.log(element);
+//******************querry selector*************
+let sel=document.querySelector('#myfirst')
+ sel=document.querySelector('div');
+// console.log(sel);
+sel.style.color='green'
+
+//*********multi element selector**********
+
+let elems=document.getElementsByClassName('child');
+elems=document.getElementsByClassName('container');
+console.log(elems[0].getElementsByClassName('child'));
+
+</script>
+</html>
