@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Manipulation</title>
+</head>
+<body>
+    <!-- <ul>
+        <li>First element</li>
+        <li>Second element</li>
+        <li>Third element</li>
+    </ul> -->
+     <button id="clickBtn" onclick="alert('namaste world')">Click me</button>
+    <script>
+        //Root node
+        // console.log(document.documentElement);
+        // ******************Events*************
+
+        // clickBtn.onclick=function(){
+        //     alert('thanks for watching')
+        // }
+
+
+
+        function callme(){
+            alert('Thanks for watching');
+        }
+    // clickBtn.onclick=callme();
+
+    //************addevent Listener***************
+    clickBtn.addEventListener('click', callme)
+    </script>
+    
+</body>
+</html>
